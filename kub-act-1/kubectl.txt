@@ -1,4 +1,9 @@
 [GET PODS] kubectl get pods 
+[GET SERVICES] kubectl get services 
 [CREATE DEPLOYMENT] kubectl create deployment first-app --image=<image>
 [GET DEPLOYMENTS] kubectl get deployments
 [DELETE DEPLOYMENT] kubectl delete deployment first-app
+[EXPOSE DEPLOYMENT / SERVICE] kubectl expose deployment first-app --type=LoadBalancer --port=8080
+[DELETE SERVICE] kubectl delete service <service-name>
+
+[VIEW SERVICES VIA MINIKUBE] minikube service first-app
