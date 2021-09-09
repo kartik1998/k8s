@@ -1,0 +1,4 @@
+[GET PODS] kubectl get pods 
+[CREATE DEPLOYMENT] kubectl create deployment first-app --image=<image>
+[GET DEPLOYMENTS] kubectl get deployments
+[DELETE DEPLOYMENT] kubectl delete deployment first-app
