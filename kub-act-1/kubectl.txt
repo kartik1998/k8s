@@ -5,5 +5,10 @@
 [DELETE DEPLOYMENT] kubectl delete deployment first-app
 [EXPOSE DEPLOYMENT / SERVICE] kubectl expose deployment first-app --type=LoadBalancer --port=8080
 [DELETE SERVICE] kubectl delete service <service-name>
+[SCALE PODS] kubectl scale deployment/first-app --replicas=3
+[UPDATE IMAGE IN DEPLOYMENT] kubectl set image deployment/first-app kub-first-app=kartikkhk/kub-first-app:v2
+[ROLLOUT STATUS OF DEPLOYMENT] kubectl rollout status deployment/first-app
+[ROLLBACK DEPLOYMENT] kubectl rollout undo deployment/first-app (use to --to-revision=1 to go to first revision)
+[TO VIEW ROLLOUT HISTORY] kubectl rollout history deployment 
 
 [VIEW SERVICES VIA MINIKUBE] minikube service first-app
